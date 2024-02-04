@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  servlet:
+    contextPath: /simple-banking
+
+spring:
+  application:
+    name: simple-banking
+  datasource:
+    url: jdbc:postgresql://localhost:5432/simpleBanking
+    username: postgres
+    password: 12345
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL9Dialect
+    show-sql: true
+    hibernate.ddl-auto: update
+    generate-ddl: true
